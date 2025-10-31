@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Paradis Archives</title>
+    <link rel="stylesheet" href="Charachters.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+    <link rel="icon" type="image/png" href="efw/logo.png">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img class="logo-png" src="efw/logo.png">
+                <div class="site-name">
+                    <h1 class="logo-text">Paradis Archives</h1>
+                </div>
+                <div class="menu-conatiner">
+                    <ul class="menu-list">
+                        <li class="menu-list-item"><a href="AniWiki.html">Home</a></li>
+                        <li class="menu-list-item"><a href="Charachters.html">Charachters</a></li>
+                        <li class="menu-list-item"><a href="Titans.html">Titans</a></li>
+                        <li class="menu-list-item"><a href="Summary.html">Summary</a></li>
+                    </ul>
+                </div>
+                <div class="search-boxing">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search the archives..." />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <hr color="#23272c" class="liner">
+    </div>
+    <div class="back">
+        <a href="AniWiki.html" class="home">Home</a>
+        <h3 class="slash">/</h3>
+        <a href="Charachters.html" class="current-page">Characters</a>
+    </div>
+    <div class="main-heading">
+        <h1 class="heading-item">Characters</h1>
+    </div>
+    <div class="toolbar">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a character..." />
+        </div>
+        <div class="custom-dropdown" id="sortDropdown">
+            <span id="sortLabel">Sort by: Name (A-Z)</span>
+            ▼
+            <div class="dropdown-options" id="sortOptions">
+                <div data-value="az">Sort by: Name (A-Z)</div>
+                <div data-value="za">Sort by: Name (Z-A)</div>
+            </div>
+        </div>
+        <div class="custom-dropdown" id="groupDropdown">
+            <span id="groupLabel">All</span>
+            ▼
+            <div class="dropdown-options" id="groupOptions">
+                <div data-value="all">All</div>
+                <div data-value="titan">Titan</div>
+                <div data-value="marley">Marleyan</div>
+                <div data-value="survey">Survey Corps</div>
+                <div data-value="el">Eldian</div>
+                <div data-value="military">Military Police Regiment</div>
+                <div data-value="gar">Garrison Regiment</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="character-list" id="characterList">
+        <div class="character" data-group="titan survey el">
+            <a href="Eren.html" class="ch">
+                <img src="efw/eren.png" alt="Eren Jaeger" class="character-img">
+                <div class="character-name">Eren Jaeger
+            </a>
+            <p class="words">Protagonist, Attack Titan</p>
+        </div>
+    </div>
+
+    <div class="character" data-group="survey el">
+        <a href="Mikasa.html" class="ch">
+            <img src="efw/mikasa.png" alt="Mikasa Ackerman" class="character-img">
+            <div class="character-name">Mikasa Ackerman
+        </a>
+        <p class="words">Deuteragonist</p>
+    </div>
+    </div>
+    <div class="character" data-group="survey titan el">
+        <a href="Armin.html" class="ch">
+            <img src="efw/Armin.png" alt="Armin Arlert" class="character-img">
+            <div class="character-name">Armin Arlert
+        </a>
+        <p class="words">Deuteragonist, Colossus Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="survey el">
+        <a href="Levi.html" class="ch">
+            <img src="efw/levi.png" alt="Levi Ackerman" class="character-img">
+            <div class="character-name">Levi Ackerman
+        </a>
+        <p class="words">Leader of special Operations Squad</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan survey">
+        <a href="Reiner.html" class="ch">
+            <img src="efw/Reiner.png" alt="Reiner Braun" class="character-img">
+            <div class="character-name">Reiner Braun
+        </a>
+        <p class="words">Marleyan Warrior, Armored Titan, Survey<br>Corps Member</p>
+    </div>
+    </div>
+
+    <div class="character" data-group="marley titan">
+        <a href="Zeke.html" class="ch">
+            <img src="efw/zeke.png" alt="Zeke Jaeger" class="character-img">
+            <div class="character-name">Zeke Jaeger
+        </a>
+        <p class="words">Marleyan Warrior, Beast Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="survey el">
+        <a href="Erwin.html" class="ch">
+            <img src="efw/erwin.png" alt="Erwin Smith" class="character-img">
+            <div class="character-name">Erwin Smith
+        </a>
+        <p class="words">13th Commander of Survey Corps</p>
+    </div>
+    </div>
+    <div class="character" data-group="el survey">
+        <a href="Hange.html" class="ch">
+            <img src="efw/hange.png" alt="Hange Zoë" class="character-img">
+            <div class="character-name">Hange Zoë
+        </a>
+        <p class="words">14th Commander of Survey Corps</p>
+    </div>
+    </div>
+    <div class="character" data-group="el military">
+        <a href="Kenny.html" class="ch">
+            <img src="efw/kenny.png" alt="Kenny Ackerman" class="character-img">
+            <div class="character-name">Kenny Ackerman
+        </a>
+        <p class="words">Military Police Regiment</p>
+    </div>
+    </div>
+    <div class="character" data-group="el gar">
+        <a href="Hannes.html" class="ch">
+            <img src="efw/hannes.png" alt="Hannes" class="character-img">
+            <div class="character-name">Hannes
+        </a>
+        <p class="words">Unit Captain of Garrison Regiment</p>
+    </div>
+    </div>
+    <div class="character" data-group="gar el">
+        <a href="Dot.html" class="ch">
+            <img src="efw/dot.png" alt="Dot Pyxis" class="character-img">
+            <div class="character-name">Dot Pyxis
+        </a>
+        <p class="words">Southern Territory Garrison Regiment<br>
+            Top Officer</p>
+    </div>
+    </div>
+    <div class="character" data-group="survey el">
+        <a href="Keith.html" class="ch">
+            <img src="efw/keith.png" alt="Keith Sadies" class="character-img">
+            <div class="character-name">Keith Sadies
+        </a>
+        <p class="words">104th Cadet corps Trainer</p>
+    </div>
+    </div>
+    <div class="character" data-group="el marley titan">
+        <a href="Grisha.html" class="ch">
+            <img src="efw/grisha.png" alt="Grisha Jaeger" class="character-img">
+            <div class="character-name">Grisha Jaeger
+        </a>
+        <p class="words">Eren Yeager's Father, Former Attack Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="el">
+        <a href="Carla.html" class="ch">
+            <img src="efw/carla.png" alt="Carla Jaeger" class="character-img">
+            <div class="character-name">Carla Jaeger
+        </a>
+        <p class="words">Eren Yeager's Mother</p>
+    </div>
+    </div>
+    <div class="character" data-group="survey gar el">
+        <a href="Dhalis.html" class="ch">
+            <img src="efw/dhalis.png" alt="Dhalis Zachary" class="character-img">
+            <div class="character-name">Dhalis Zachary
+        </a>
+        <p class="words">Premier of Eldian Military</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Ymir.html" class="ch">
+            <img src="efw/ymir.png" alt="Ymir Fritz" class="character-img">
+            <div class="character-name">Ymir Fritz
+        </a>
+        <p class="words">Former Founding Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan survey">
+        <a href="Annie.html" class="ch">
+            <img src="efw/annie.png" alt="Annie Leonhart" class="character-img">
+            <div class="character-name">Annie Leonhart
+        </a>
+        <p class="words">Marleyan Warrior, Female Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="el survey">
+        <a href="Jean.html" class="ch">
+            <img src="efw/jean.png" alt="Jean Kirschtein" class="character-img">
+            <div class="character-name">Jean Kirschtein
+        </a>
+        <p class="words">Survey Corps Member</p>
+    </div>
+    </div>
+    <div class="character" data-group="el survey">
+        <a href="Conny.html" class="ch">
+            <img src="efw/conny.png" alt="Conny Springer" class="character-img">
+            <div class="character-name">Conny Springer
+        </a>
+        <p class="words">Survey Corps Member</p>
+    </div>
+    </div>
+    <div class="character" data-group="el survey">
+        <a href="Sasha.html" class="ch">
+            <img src="efw/sasha.png" alt="Sasha Braus" class="character-img">
+            <div class="character-name">Sasha Braus
+        </a>
+        <p class="words">Survey Corps Member</p>
+    </div>
+    </div>
+    <div class="character" data-group="el survey">
+        <a href="Historia.html" class="ch">
+            <img src="efw/historia.png" alt="Historia Reiss " class="character-img">
+            <div class="character-name">Historia Reiss
+        </a>
+        <p class="words">Nobleman, Former Survey Corps Member</p>
+    </div>
+    </div>
+    <div class="character" data-group="el titan">
+        <a href="Rod.html" class="ch">
+            <img src="efw/rod.png" alt="Rod Reiss" class="character-img">
+            <div class="character-name">Rod Reiss
+        </a>
+        <p class="words">Titan, Nobleman</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley">
+        <a href="Willy.html" class="ch">
+            <img src="efw/Willy.png" alt="Willy Tybur" class="character-img">
+            <div class="character-name">Willy Tybur
+        </a>
+        <p class="words">Nobleman in Marley</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Lara.html" class="ch">
+            <img src="efw/Lara.png" alt="Lara Tybur" class="character-img">
+            <div class="character-name">Lara Tybur
+        </a>
+        <p class="words">Sister of Willy Tybur, Former<br>War Hammer Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan survey">
+        <a href="Bertolt.html" class="ch">
+            <img src="efw/Bertolt.png" alt="Bertolt Hoover" class="character-img">
+            <div class="character-name">Bertolt Hoover
+        </a>
+        <p class="words">Survey Corps Member, Marleyan Warrior,<br>Former Colossus Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Porco.html" class="ch">
+            <img src="efw/Marcel.png" alt="Porco Galliard" class="character-img">
+            <div class="character-name">Porco Galliard
+        </a>
+        <p class="words">Marleyan Warrior, Former Jaw Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Pieck.html" class="ch">
+            <img src="efw/Pieck.png" alt="Pieck Finger" class="character-img">
+            <div class="character-name">Pieck Finger
+        </a>
+        <p class="words">Marleyan Warrior, Cart Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Dina.html" class="ch">
+            <img src="efw/Dina.png" alt="Dina Fritz" class="character-img">
+            <div class="character-name">Dina Fritz
+        </a>
+        <p class="words">1st wife of Grisha, Mother of Zeke</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Falco.html" class="ch">
+            <img src="efw/Falco.png" alt="Falco Grice" class="character-img">
+            <div class="character-name">Falco Grice
+        </a>
+        <p class="words">Marleyan Warrior, Jaw Titan</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Gabi.html" class="ch">
+            <img src="efw/Gabi.png" alt="Gabi Braun" class="character-img">
+            <div class="character-name">Gabi Braun
+        </a>
+        <p class="words">Marleyan Warrior, Cousin of Reiner Braun</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley">
+        <a href="Yelena.html" class="ch">
+            <img src="efw/Yelena.png" alt="Yelena" class="character-img">
+            <div class="character-name">Yelena
+        </a>
+        <p class="words">Marleyan Soldier</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley">
+        <a href="Fay.html" class="ch">
+            <img src="efw/Fay.png" alt="Fay Jaeger" class="character-img">
+            <div class="character-name">Fay Jaeger
+        </a>
+        <p class="words">Grisha Yeager's Sister</p>
+    </div>
+    </div>
+    <div class="character" data-group="el survey">
+        <a href="Floch.html" class="ch">
+            <img src="efw/Jaegerists .png" alt="Floch Forster" class="character-img">
+            <div class="character-name">Floch Forster
+        </a>
+        <p class="words">Jaegerist</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley">
+        <a href="Kiyomi.html" class="ch">
+            <img src="efw/Kiyomi.png" alt="Kiyomi Azumabito" class="character-img">
+            <div class="character-name">Kiyomi Azumabito
+        </a>
+        <p class="words">Ambassador of Hizuru, Ally to ELdians</p>
+    </div>
+    </div>
+    <div class="character" data-group="marley titan">
+        <a href="Kruger.html" class="ch">
+            <img src="efw/kruger.png" alt="Eren Kruger" class="character-img">
+            <div class="character-name">Eren Kruger
+        </a>
+        <p class="words">Marleyan Officer, Former Attack Titan</p>
+    </div>
+    </div>
+    </div>
+    <hr color="#23272c" class="lines">
+    <div class="footer">
+        <ul class="footer-content">
+            <li class="footer-content-item">About</li>
+            <li class="footer-content-item">Disclaimer</li>
+            <li class="footer-content-item">Contact</li>
+        </ul>
+    </div>
+    <div class="logo-2">
+        <ul class="footer-logo">
+            <li class="footer-logo-item"><i class="fa-brands fa-twitter"></i></li>
+            <li class="footer-logo-item"><i class="fa-brands fa-youtube"></i></li>
+            <li class="footer-logo-item"><i class="fa-brands fa-instagram"></i></li>
+            <li class="footer-logo-item"><i class="fa-brands fa-discord"></i></li>
+        </ul>
+    </div>
+    <div class="last-line">
+        <p class="last-line-text">© Paradis Archives. All charachters and story
+            are property of their respective owners.</p>
+    </div>
+    <script src="character.js"></script>
+</body>
+
+</html>

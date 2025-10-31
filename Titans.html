@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Paradis Archives</title>
+    <link rel="stylesheet" href="Charachters.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+    <link rel="icon" type="image/png" href="efw/logo.png">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img class="logo-png" src="efw/logo.png">
+                <div class="site-name">
+                    <h1 class="logo-text">Paradis Archives</h1>
+                </div>
+                <div class="menu-conatiner">
+                    <ul class="menu-list">
+                        <li class="menu-list-item"><a href="AniWiki.html">Home</a></li>
+                        <li class="menu-list-item"><a href="Charachters.html">Charachters</a></li>
+                        <li class="menu-list-item"><a href="Titans.html">Titans</a></li>
+                        <li class="menu-list-item"><a href="Summary.html">Summary</a></li>
+                    </ul>
+                </div>
+                <div class="search-boxing">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search the archives..." />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <hr color="#23272c" class="liner">
+    </div>
+    <div class="back">
+        <a href="AniWiki.html" class="home">Home</a>
+        <h3 class="slash">/</h3>
+        <a href="Titans.html" class="current-page">Titans</a>
+    </div>
+    <div class="main-heading">
+        <h1 class="heading-item">Titans</h1>
+    </div>
+    <div class="toolbar">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a character..." />
+        </div>
+        <div class="custom-dropdown" id="sortDropdown">
+            <span id="sortLabel">Sort by: Name (A-Z)</span>
+            ▼
+            <div class="dropdown-options" id="sortOptions">
+                <div data-value="az">Sort by: Name (A-Z)</div>
+                <div data-value="za">Sort by: Name (Z-A)</div>
+            </div>
+        </div>
+        <div class="custom-dropdown" id="groupDropdown">
+            <span id="groupLabel">All</span>
+            ▼
+            <div class="dropdown-options" id="groupOptions">
+                <div data-value="titan">Titan</div>
+            </div>
+        </div>
+    </div>
+    <div class="character-list" id="characterList">
+        <div class="character" data-group="titan">
+            <a href="Attack.html" class="ch">
+                <img src="efw/Attack.png" alt="Attack Titan" class="character-img">
+                <div class="character-name">Attack Titan
+            </a>
+            <p class="words">Eren Jaeger</p>
+        </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Founding.html" class="ch">
+            <img src="efw/Founding.png" alt="Founding Titan" class="character-img">
+            <div class="character-name">Founding Titan
+        </a>
+        <p class="words">Eren Jaeger</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Armored.html" class="ch">
+            <img src="efw/Armored.png" alt="Armored Titan" class="character-img">
+            <div class="character-name">Armored Titan
+        </a>
+        <p class="words">Reiner Braun</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan=">
+        <a href="Hammer.html" class="ch">
+            <img src="efw/Hammer.png" alt="War Hammer Titan" class="character-img">
+            <div class="character-name">War Hammer Titan
+        </a>
+        <p class="words">Eren Jaeger</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Colossus.html" class="ch">
+            <img src="efw/Colossus.png" alt="Colossus Titan" class="character-img">
+            <div class="character-name">Colossus Titan
+        </a>
+        <p class="words">Armin Arlert</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Female.html" class="ch">
+            <img src="efw/Female.png" alt="Female Titan" class="character-img">
+            <div class="character-name">Female Titan
+        </a>
+        <p class="words">Annie Leonhart</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Cart.html" class="ch">
+            <img src="efw/Cart.png" alt="Cart Titan" class="character-img">
+            <div class="character-name">Cart Titan
+        </a>
+        <p class="words">Pieck Finger</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Beast.html" class="ch">
+            <img src="efw/Beast.png" alt="Beast Titan" class="character-img">
+            <div class="character-name">Beast Titan
+        </a>
+        <p class="words">Zeke Jaeger</p>
+    </div>
+    </div>
+    <div class="character" data-group="titan">
+        <a href="Jaw.html" class="ch">
+            <img src="efw/Jaw.png" alt="Jaw Titan" class="character-img">
+            <div class="character-name">Jaw Titan
+        </a>
+        <p class="words">Falco Grice</p>
+    </div>
+    </div>
+    </div>
+    <hr color="#23272c" class="lines">
+    <div class="footer">
+        <ul class="footer-content">
+            <li class="footer-content-item">About</li>
+            <li class="footer-content-item">Disclaimer</li>
+            <li class="footer-content-item">Contact</li>
+        </ul>
+    </div>
+    <div class="logo-2">
+        <ul class="footer-logo">
+            <li class="footer-logo-item"><i class="fa-brands fa-twitter"></i></li>
+            <li class="footer-logo-item"><i class="fa-brands fa-youtube"></i></li>
+            <li class="footer-logo-item"><i class="fa-brands fa-instagram"></i></li>
+            <li class="footer-logo-item"><i class="fa-brands fa-discord"></i></li>
+        </ul>
+    </div>
+    <div class="last-line">
+        <p class="last-line-text">© Paradis Archives. All charachters and story
+            are property of their respective owners.</p>
+    </div>
+
+
+
+
+
+    <script src="character.js"></script>
+</body>
+
+</html>
